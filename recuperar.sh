@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Comprobar si se ha pasado el día como argumento [cite: 84]
+# Comprobar si se ha pasado el día como argumento 
 if [ -z "$1" ]; then
     echo "Uso: $0 <dia_a_recuperar>"
     exit 1
@@ -12,7 +12,7 @@ DESTINO_DATOS="/root/datos/"
 
 echo "Recuperando copia del día: $DIA..."
 
-# 1. Borrar datos actuales (simulación de pérdida) [cite: 83]
+# 1. Borrar datos actuales (simulación de pérdida) 
 rm -rf ${DESTINO_DATOS}*
 
 # 2. Restaurar desde el backup [cite: 85]
